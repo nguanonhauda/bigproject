@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="761.0" style="-fx-background-color: #98ebe0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="517.0" prefWidth="182.0" style="-fx-background-color: #8dacb0;">
+         <children>
+            <Label layoutX="35.0" layoutY="39.0" prefHeight="37.0" prefWidth="111.0" text="Welcome">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="53.0" layoutY="430.0" mnemonicParsing="false" text="Đăng xuất " textFill="#020319">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="244.0" mnemonicParsing="false" text="Quản lý sản phẩm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="26.0" layoutY="312.0" mnemonicParsing="false" text="Quản lý đơn hàng">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="375.0" mnemonicParsing="false" text="Quản lý nhân viên">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="182.0" prefHeight="231.0" prefWidth="578.0">
+         <columns>
+            <TableColumn prefWidth="148.6667022705078" text="Tên " />
+            <TableColumn prefWidth="128.6666259765625" text="SĐT" />
+            <TableColumn prefWidth="160.66671752929688" text="Mã Nhân viên" />
+            <TableColumn minWidth="6.66668701171875" prefWidth="139.33331298828125" text="Chức vụ" />
+         </columns>
+      </TableView>
+      <Label layoutX="327.0" layoutY="286.0" prefHeight="20.0" prefWidth="31.0" text="Tên: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="373.0" layoutY="283.0" />
+      <Label layoutX="329.0" layoutY="337.0" text="SĐT:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="387.0" text="Mã Nhân Viên:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="430.0" text="Chức vụ:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="373.0" layoutY="334.0" />
+      <TextField layoutX="373.0" layoutY="384.0" />
+      <TextField layoutX="373.0" layoutY="427.0" />
+      <Button layoutX="587.0" layoutY="309.0" mnemonicParsing="false" text="Thêm" />
+      <Button layoutX="579.0" layoutY="357.0" mnemonicParsing="false" text="Thay đổi" />
+      <Button layoutX="591.0" layoutY="407.0" mnemonicParsing="false" text="Xóa" />
+   </children>
+</AnchorPane>
