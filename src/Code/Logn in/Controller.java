@@ -17,6 +17,7 @@ import java.time.LocalDate;
 
 
 public class Controller {
+    private static final String UserFileHandler = null;
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -47,7 +48,7 @@ public class Controller {
 
     @FXML // Truy cập vào giao diện đăng nhập
     public void Enter(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Login/EmployeeLogin.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/FXML/EmployeeLogin.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -56,7 +57,7 @@ public class Controller {
 
     @FXML // Thoát khỏi giao diện đăng nhập
     public void Exit(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Login/login.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/FXML/login.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -69,7 +70,7 @@ public class Controller {
 
     if (validateUser(username, password)) {
         // Thao tác khi người dùng xác thực thành công
-        root = FXMLLoader.load(getClass().getResource("/giaodien/giaodien.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/FXML/giaodien.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -93,7 +94,7 @@ private boolean validateUser(String username, String password) {
         String username = usernameField.getText();
         String password = passwordField.getText();
         if (username.equals("admin") && password.equals("123456")) {
-            root = FXMLLoader.load(getClass().getResource("/giaodien/giaodien.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/FXML/giaodien.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -108,7 +109,7 @@ private boolean validateUser(String username, String password) {
     
     @FXML // Trở về trang chủ chính.
     public void ExitSceneLogin(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Login/Login.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -126,7 +127,7 @@ private boolean validateUser(String username, String password) {
 
     @FXML // Thoát giao diện đăng kí
     public void ExitSignIn(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/Login/login.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/FXML/login.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
